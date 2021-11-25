@@ -1,4 +1,5 @@
 import db from "../firebase/firebase";
+import { Helmet } from "react-helmet";
 import {
   collection,
   getDocs,
@@ -98,6 +99,9 @@ function Tasks() {
 
   return (
     <div className="container p-3">
+      <Helmet>
+        <title>Tasks | Platos Demo App</title>
+      </Helmet>
       {error ? (
         <h4 className="text-center my-5">
           Something Went Wrong. Please Try Again.

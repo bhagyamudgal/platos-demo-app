@@ -8,6 +8,7 @@ import {
   query,
   orderBy,
 } from "firebase/firestore";
+import { Helmet } from "react-helmet";
 import { useState, useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
@@ -101,6 +102,9 @@ function Notes() {
 
   return (
     <div className="container p-3">
+      <Helmet>
+        <title>Notes | Platos Demo App</title>
+      </Helmet>
       {error ? (
         <h4 className="text-center my-5">
           Something Went Wrong. Please Try Again.
