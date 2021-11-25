@@ -3,7 +3,7 @@ import styles from "./Header.module.css";
 
 function Header() {
   return (
-    <nav className="navbar navbar-expand-sm sticky-top navbar-dark bg-dark p-3">
+    <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-3">
       <div className="container-fluid">
         <NavLink
           className={({ isActive }) =>
