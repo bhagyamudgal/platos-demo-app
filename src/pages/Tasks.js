@@ -109,7 +109,7 @@ function Tasks() {
       ) : (
         <>
           <h1>My Tasks</h1>
-          <p className="mt-3">Click on New Note button to add new note.</p>
+          <p className="mt-3">Click on New Task button to add new task.</p>
           <button
             className="btn btn-secondary mb-3"
             onClick={() => {
